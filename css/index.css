@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.w{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+body{
+    /* background-color: #eee; */
+    background-image: url(../images/forest-3622519.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box{
+    position: relative;
+    /* background-color: azure; */
+}
+
+.tx{
+    margin: 150px auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    overflow: hidden;   
+}
+
+.tx img{
+    width: 100%;
+    height: 100%;
+}
+
+.tx:hover{
+    animation: move 3s linear;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes move{
+    0%{
+        transform: rotate(0);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.box h1{
+    position: absolute;
+    top: 155px;
+    text-align: center;
+    color: rgb(0, 150, 136);
+    /* background-color: aqua; */
+}
